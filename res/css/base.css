@@ -1,0 +1,64 @@
+.mt-70{margin-top:70px;}
+.subNav{border:1px solid #ddd;border-top:2px solid #2667ba;}
+.subNav p{float:left;margin:0;height:43px;text-align:center;cursor:pointer;}
+.subNav p b{display:block;line-height:22px;padding-top:3px;}
+.subNav p span{display:block;text-align:center;color:#999;font-size:12px;line-height:12px;}
+.subNav p i{color:#f00;}
+h6.playTop{height:44px;line-height:40px;}
+h6.playTop span{font-size:20px;padding-right:20px;}
+.playTop{border-bottom:1px #ddd dotted;}
+.playTop p{float:left;margin:0;}
+.playTop p i{width:20px;height:20px;text-align:center;line-height:20px;border:1px #ddd solid;border-radius:2px;display:inline-block;font-style:normal;margin:0 2px;}
+.playTop p#playTip{float:right;}
+#playTip b{color:#f00;}
+.playContent{border:1px #ddd solid;border-top:none;}
+.bollStyle{overflow:hidden;line-height:50px;}
+.bollTitle{line-height:51px;}
+.bollStyle a{width:40px;height:40px;display:inline-block;line-height:40px;text-align:center;background:rgb(240,240,240);border:1px #ddd solid;border-radius:22px;color:#444;cursor:pointer;margin:5px;font-size:20px;}
+.bollStyle a.rb{background:#f00;border:1px #f00 solid;color:#fff;}
+.bollStyle a:hover{text-decoration:none;}
+.yl{line-height:20px;}
+.yl b{line-height:20px;width:40px;margin:0 5px;display:inline-block;text-align:center;font-weight:normal;}
+.betArea{padding-bottom:20px;}
+.betBtn{text-align:center;padding:20px 0;border-top:1px #ddd dotted;}
+#betContent{list-style:none;margin:20px auto 0 auto;padding:0;width:600px;height:120px;border:1px #ddd solid;overflow-y:scroll;}
+#betContent li{margin:0;height:29px;line-height:29px;border-bottom:1px #ddd dotted;}
+#betContent li:nth-child(2n){background:#f8f8f8;}
+#betContent li:hover{background:#e7e7e7;}
+#betContent li div{width:380px;height:29px;float:left;margin:0 10px;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#f00;}
+#betContent li div span{color:#767676;}
+#betContent li p{margin:0;float:left;width:190px;text-align:right;padding-right:10px;}
+#betContent li p a{padding-left:5px;cursor:pointer;}
+#betContent li:last-of-type{border-bottom:none;}
+.betTitle{padding:7px 0;text-align:left;}
+.betTitle span{float:left;padding:0 10px;}
+.betTitle .radio,.betTitle .checkbox{margin:0;padding:0 20px 0 0;float:left;}
+.bg-a1{background:#f8f8f8;}
+.bg-a2{background:#fbfbfb;}
+.bg-a3{background:#ddd;}
+.singleCase{height:40px;line-height:40px;}
+.singleCase-l a,.singleCase-l input,.singleCase-l b,.singleCase-l span{line-height:40px;float:left;}
+.singleCase span{padding:0 5px;}
+.singleCase a,.singleCase input{margin-top:5px;text-align:center;border:1px #ddd solid;color:#444;font-size:16px;}
+.singleCase a{width:30px;height:30px;line-height:26px;cursor:pointer;}
+.singleCase a:hover{text-decoration:none;}
+.singleCase input{height:30px;line-height:30px;width:40px;border-left:none;border-right:none;}
+.issueArea .pre-scrollable{max-height:220px;margin-bottom:10px;border-bottom:1px #ddd solid;}
+.issueList{margin:0;border-bottom:none!important;}
+.mt-10{margin-top:10px;}
+.issueList td,.issueList th{text-align:center;}
+.issueList input{width:40px;height:20px;text-align:center;}
+.issueList thead{}
+.text-red{color:#f00;font-weight:normal;}
+.pb20{padding:20px 0;}
+
+@media (min-width: 768px){
+	.subNav p b{font-size:12px;}
+	.subNav p i{display:none;}
+}
+@media (min-width: 1200px){
+	.subNav p b{font-size:14px;}
+	.subNav p i{display:inline-block;}
+}
+
+

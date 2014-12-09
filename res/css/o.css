@@ -1,0 +1,5 @@
+.cp2yLock{position:absolute;z-index:999;top:0;left:0;right:0;bottom:0;background:#000;opacity:0.2;filter:Alpha(opacity=30);_background:none;display:none;}
+.cp2yDialogBox{width:650px;border:5px rgba(225,225,225,.3) solid;background:#fff;position:absolute;z-index:999;display:none;height:400px;}
+.dialogTitle{width:100%;height:35px;line-height:35px;background:#337ab7;position:relative;}
+.dialogTitle span{line-height:35px;color:#fff;padding-left:10px;}
+.dialogTitle a{width:35px;height:35px;position:absolute;right:0;top:0;color:#fff;line-height:35px;text-align:center;cursor:pointer;}
