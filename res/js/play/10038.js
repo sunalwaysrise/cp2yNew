@@ -13,18 +13,16 @@ require.config({
     }
   } 
 });
-require(['jquery','dialog','bootstrap'],function($,d,bootstrap){
+require(['jquery','dialog','util','bootstrap'],function($,d,u,bootstrap){
+  d.init();
   $("#buy").click(function(){
     d.alert('<a id="test">123</a>');
   });
-  $('body').on('click','.closeDialog',function(){
-    var i=$(this).attr('data');
-    d.close(i);
-  });
-
   $('body').on('click','#test',function(){
     d.alert('123345',{width:"200px",height:"120px"});
   });
+
+
 
   var l={};
   l.lid=10046;
