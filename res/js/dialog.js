@@ -11,12 +11,12 @@ define(['jquery','util'],function($,u){
           try{if(window.getSelection){window.getSelection().removeAllRanges();}else{document.selection.empty();}}catch(e){}
           var s=u.screen(),maxTop=s.sh,maxLeft=s.sw,top = Math.max(event.clientY-pos.top,0),left=Math.max(event.clientX-pos.left,0);
           dragObj.css({top:Math.min(top,maxTop-oh),left:Math.min(left,maxLeft-ow)});
+        }).mouseup(function(){
+          $(this).off('mousemove');$(this).off('mouseup');
         });
-      }).on('click','.dialogTitle',function(){
-        $(this).off('mousemove');$(this).off('mouseup');
       });
     },
-  	_set:function(_obj){
+  	_set:function(_obj,i){
 	    var t=document.documentElement.scrollTop || document.body.scrollTop,
 	        viewHeight=$(window).height(),
 	        viewWidth=$(window).width(),
@@ -24,6 +24,8 @@ define(['jquery','util'],function($,u){
 	        _objWidth=_obj.width(),
 	        dialogTop=(viewHeight / 2) - (_objHeight / 2) + t,dialogLeft = (viewWidth / 2) - (_objWidth / 2);
 	    _obj.css({top:dialogTop,left:dialogLeft});
+      var lockWidth = $(document).width(),lockHeight = $(document).height();
+      $("#cp2yLock"+i).css({"width":lockWidth,"height":lockHeight}).show();
   	},
   	alert:function(x,css){
       var i=$(".cp2yLock").size();
@@ -43,8 +45,6 @@ define(['jquery','util'],function($,u){
     },
     _lock:function(i){
       $('body').append('<div class="cp2yLock" id="cp2yLock'+i+'"></div>');
-      var lockWidth = $(document).width(),lockHeight = $(document).height();
-      $("#cp2yLock"+i).css({"width":lockWidth,"height":lockHeight}).show();
     },
     _open:function(o,i,css){
   		var that=this,d=[];
@@ -55,11 +55,10 @@ define(['jquery','util'],function($,u){
       if(css){
         $("#cp2yDialogBox"+i).css(css);
       }
-  		u.throttle(this._set($("#cp2yDialogBox"+i)), 50, 100);
+  		u.throttle(this._set($("#cp2yDialogBox"+i),i), 50, 100);
   		$(window).resize(function(){
         if(window.lock){
-          u.throttle(that._lock(i), 50, 100);
-          u.throttle(that._set($("#cp2yDialogBox"+i)), 50, 100);
+          u.throttle(that._set($("#cp2yDialogBox"+i),i), 50, 100);
         }
       });
   	}
