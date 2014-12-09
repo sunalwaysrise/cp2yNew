@@ -5,32 +5,15 @@ define(['jquery','util'],function($,u){
         var i=$(this).attr('data');
         d.close(i);
       }).on('mousedown','.dialogTitle',function(event){
-        var dragObj=$(this).parent(),pos = {
-          top  : dragObj.position().top,
-          left : dragObj.position().left
-        },oh=dragObj.outerHeight(),ow = dragObj.outerWidth();
-        pos = {
-          top   :	 event.clientY  - pos.top,
-          left  :  event.clientX  - pos.left
-        };
+        var dragObj=$(this).parent(),pos={top:dragObj.position().top,left:dragObj.position().left},oh=dragObj.outerHeight(),ow=dragObj.outerWidth();
+        pos={top:event.clientY-pos.top,left:event.clientX-pos.left};
         $(this).mousemove(function(event){
-          try{
-            if (window.getSelection) {
-              window.getSelection().removeAllRanges();
-            } else {
-              document.selection.empty();
-            }
-          }catch(e){}
-          var s = u.screen();
-          var maxTop = s.sh;
-          var maxLeft = s.sw;
-          var top = Math.max(event.clientY-pos.top,0);
-          var left = Math.max(event.clientX-pos.left,0);
+          try{if(window.getSelection){window.getSelection().removeAllRanges();}else{document.selection.empty();}}catch(e){}
+          var s=u.screen(),maxTop=s.sh,maxLeft=s.sw,top = Math.max(event.clientY-pos.top,0),left=Math.max(event.clientX-pos.left,0);
           dragObj.css({top:Math.min(top,maxTop-oh),left:Math.min(left,maxLeft-ow)});
         });
       }).on('click','.dialogTitle',function(){
-        $(this).off('mousemove');
-        $(this).off('mouseup');
+        $(this).off('mousemove');$(this).off('mouseup');
       });
     },
   	_set:function(_obj){
@@ -46,10 +29,7 @@ define(['jquery','util'],function($,u){
       var i=$(".cp2yLock").size();
   		window.lock=true;
   		this._lock(i);
-      var o={
-        t:'提示信息',
-        c:x
-      };
+      var o={t:'提示信息',c:x};
   		this._open(o,i,css);
   	},
     confirm:function(){},
@@ -82,11 +62,7 @@ define(['jquery','util'],function($,u){
           u.throttle(that._set($("#cp2yDialogBox"+i)), 50, 100);
         }
       });
-  	},
-    drag:function(event){
-
-    }
-
+  	}
   };
   return d;
 });
