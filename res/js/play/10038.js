@@ -16,11 +16,15 @@ require.config({
 require(['jquery','dialog','util','bootstrap'],function($,d,u,bootstrap){
   d.init();
   $("#buy").click(function(){
-    d.alert('<a id="test">123</a>');
+    d.alert('<a id="kkk">123</a>');
   });
-  $('body').on('click','#test',function(){
-    d.alert('123345',{width:"200px",height:"120px"});
+  $('body').on('click','#kkk',function(){
+    var k=$(this).parents(".cp2yDialogBox").attr('data');
+    console.log(k);
+    d.close(k);
+    //d.alert('123345',{width:"200px",height:"120px"});
   });
+
 
 
 

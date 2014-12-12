@@ -34,7 +34,12 @@ define(['jquery','util'],function($,u){
       var o={t:'提示信息',c:x};
   		this._open(o,i,css);
   	},
-    confirm:function(){},
+    open:function(o,css){
+      var i=$(".cp2yLock").size();
+      window.lock=true;
+      this._lock(i);
+      this._open(o,i,css);
+    },
     frame:function(){},
     close:function(i){
       $("#cp2yLock"+i).remove();
@@ -50,7 +55,7 @@ define(['jquery','util'],function($,u){
   		var that=this,d=[];
       d.push('<div class="dialogTitle"><span>'+o.t+'</span><a class="closeDialog" data="'+i+'">X</a></div>');
       d.push('<div class="dialogContent">'+o.c+'</div>');
-      $('body').append('<div class="cp2yDialogBox" id="cp2yDialogBox'+i+'"></div>');
+      $('body').append('<div class="cp2yDialogBox" data="'+i+'" id="cp2yDialogBox'+i+'"></div>');
   		$("#cp2yDialogBox"+i).html(d.join('')).show();
       if(css){
         $("#cp2yDialogBox"+i).css(css);
