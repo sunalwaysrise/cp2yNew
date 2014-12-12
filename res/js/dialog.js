@@ -56,14 +56,15 @@ define(['jquery','util'],function($,u){
       d.push('<div class="dialogTitle"><span>'+o.t+'</span><a class="closeDialog" data="'+i+'">X</a></div>');
       d.push('<div class="dialogContent">'+o.c+'</div>');
       $('body').append('<div class="cp2yDialogBox" data="'+i+'" id="cp2yDialogBox'+i+'"></div>');
+      var ob=$("#cp2yDialogBox"+i);
       if(cName){
-        $("#cp2yDialogBox"+i).addClass(cName);
+        ob.addClass(cName);
       }
-  		$("#cp2yDialogBox"+i).html(d.join('')).show();
       if(css){
-        $("#cp2yDialogBox"+i).css(css);
+        ob.css(css);
       }
-  		u.throttle(this._set($("#cp2yDialogBox"+i),i), 50, 100);
+      ob.html(d.join('')).show();
+      u.throttle(this._set($("#cp2yDialogBox"+i),i), 50, 100);
   		$(window).resize(function(){
         if(window.lock){
           u.throttle(that._set($("#cp2yDialogBox"+i),i), 50, 100);
