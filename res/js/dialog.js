@@ -64,10 +64,10 @@ define(['jquery','util'],function($,u){
         ob.css(css);
       }
       ob.html(d.join('')).show();
-      u.throttle(this._set($("#cp2yDialogBox"+i),i), 50, 100);
+      u.throttle(this._set(ob,i), 50, 100);
   		$(window).resize(function(){
         if(window.lock){
-          u.throttle(that._set($("#cp2yDialogBox"+i),i), 50, 100);
+          u.throttle(that._set(ob,i), 50, 100);
         }
       });
   	}
