@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<title>彩票2元网－实验版</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="res/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="res/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="res/css/dialog.css" />
+	<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div class="navbar-header logo">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+			<a class="navbar-brand">彩票2元-实验版</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li class="active"><a href="#">购彩大厅</a></li>
+				<li><a href="#">合买中心</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						彩票开奖
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">开奖公告</a></li>
+						<li><a href="#">中奖查询</a></li>
+						<li><a href="#">过关统计</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						走势图标
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">走势图</a></li>
+						<li><a href="#">在线过滤</a></li>
+					</ul>
+				</li>
+				<li><a href="#">彩票预测</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container mt-70">
+	<div class="row subNav">
+		<p class="col-md-1 bg-a1"><b>任选二</b><span>最易中</span></p>
+		<p class="col-md-1 bg-a2"><b>任选三</b><span>19元<i>加奖</i></span></p>
+		<p class="col-md-1 bg-a1"><b>任选四</b><span>78元</span></p>
+		<p class="col-md-1 bg-a2"><b>任选五</b><span>540元<i>加奖</i></span></p>
+		<p class="col-md-1 bg-a1"><b>任选六</b><span>90元</span></p>
+		<p class="col-md-1 bg-a2"><b>任选七</b><span>26元</span></p>
+		<p class="col-md-1 bg-a1"><b>任选八</b><span>9元<i>加奖</i></span></p>
+		<p class="col-md-1 bg-a2"><b>前一</b><span>适合多选</span></p>
+		<p class="col-md-1 bg-a1"><b>前二组选</b><span>65元</span></p>
+		<p class="col-md-1 bg-a2"><b>前二直选</b><span>130元</span></p>
+		<p class="col-md-1 bg-a1"><b>前三组选</b><span>195元<i>加奖</i></span></p>
+		<p class="col-md-1 bg-a2"><b>前三直选</b><span>奖金高</span></p>
+	</div>
+	<div class="row">
+		<div class="col-md-9 playContent">
+			<h6 class="playTop">
+				<p><span id="cur">14112139期</span>当前期<i>07</i>:<i>12</i>后截至</p><p id="playTip"></p>
+			</h6>
+			<div class="row betArea" id="betArea"></div>
+			<div class="row betBtn">
+				<a class="btn btn-primary" id="addContent">添加到投注列表</a>
+				<ul id="betContent"></ul>
+			</div>
+			<div class="row">
+				<div class="col-md-7 singleCase singleCase-l">
+					<span>单倍注数:</span>
+					<b class="text-red" id="Bets">0</b>
+					<span>倍，金额:</span>
+					<b class="text-red" id="singleBetMoney">0</b>
+					<span>元，您选择了</span>
+					<a>-</a>
+					<input class="" value="1" />
+					<a>+</a>
+					<span>倍</span>
+				</div>
+				<div class="col-md-5 singleCase text-right"><b  class="text-red">14112168期</b><span>离投注截止还有</span><b  class="text-red">04分41秒</b></div>
+				<div class="col-md-12 bg-a3 betTitle">
+					<span>追号设置</span>
+					<div class="radio"><label for="r0"><input id="r0" type="radio" name="zh" checked />常规追号</label></div>
+					<div class="radio"><label for="r1"><input id="r1" type="radio" name="zh" />倍投计划</label></div>
+					<div class="checkbox"><label><input type="checkbox" value="" />中奖后停止追号</label></div>
+				</div>
+				<div class="col-md-12 issueArea">
+					<table class="table issueList mt-10 table-bordered table-condensed">
+						<thead>
+							<tr>
+								<th width="05%">序</th>
+								<th width="10%">期号</th>
+								<th width="">每期<input>倍/累加<input>倍</th>
+								<th width="15%">当期投入</th>
+								<th width="15%">累计投入</th>
+								<th width="15%">累计收益</th>
+								<th width="15%">收益率</th>
+							</tr>
+						</thead>
+					</table>
+					<div class="pre-scrollable">
+						<table id="issue" class="table issueList table-striped table-bordered table-hover table-condensed">
+							<tbody>
+								<tr><td width="05%">1</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">2</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">3</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">4</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">5</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">6</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">7</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">8</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">9</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+								<tr><td width="05%">10</td><td width="10%">14112201</td><td><input>倍</td><td width="15%">46元</td><td width="15%">46元</td><td width="15%">540元</td><td width="15%">1073.91%</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row betBtn">
+				<p>本次投注为<b class="text-red">1</b>期，金额为￥<b class="text-red">54.00</b>元</p>
+				<a class="btn btn-danger" id="buy">确认购买</a>
+			</div>
+		</div>
+		<div class="col-md-3">
+
+		</div>
+	</div>
+</div>
+<a id="t">test</a>
+
+
+<script src="res/js/require.js" data-main="res/js/play/10038"></script>
+<script>
+
+    //document.getElementById('t').
+</script>
+</body>
+</html>
