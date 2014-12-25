@@ -4,6 +4,7 @@ define(['jquery','util'],function($,u){
       $('body').on('click','.closeDialog',function(){
         var i=$(this).attr('data');
         d.close(i);
+        if(d._flag){d._flag=false;}
       }).on('mousedown','.dialogTitle',function(event){
         var dragObj=$(this).parent(),pos={top:dragObj.position().top,left:dragObj.position().left},oh=dragObj.outerHeight(),ow=dragObj.outerWidth();
         pos={top:event.clientY-pos.top,left:event.clientX-pos.left};
@@ -27,7 +28,9 @@ define(['jquery','util'],function($,u){
       var lockWidth = $(document).width(),lockHeight = $(document).height();
       $("#cp2yLock"+i).css({"width":lockWidth,"height":lockHeight}).show();
   	},
+    _flag:false,
   	alert:function(x,css){
+      if(this._flag){return false;}
       var i=$(".cp2yLock").size();
   		window.lock=true;
   		this._lock(i);
