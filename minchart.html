@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>彩票2元网－实验版</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="res/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/minChart.css" />
+</head>
+<body>
+<div class="warp">
+     <div class="minChart">
+         <div class="title">
+             <span>号码走势图</span>
+             <div class="c1" id="minChartBtnArea">
+                 <a data='chong'>重号</a>
+                 <a data='lian'>连号</a>
+                 <a data='bian'>边号</a>
+                 <a data='chuan'>串号</a>
+                 <a class="onn">分区线</a>
+                 <a class="onn">遗漏</a>
+                 <a>柱图</a>
+             </div>
+             <div class="c2">
+                 <a id="minChartBtn">设置<b></b></a>
+                 <div id="settingBg"></div>
+                 <div id="setting">
+                     <ul class="setLen" id="setLen">
+                         <li data="10">显示10期</li>
+                         <li data="20">显示20期</li>
+                         <li data="30" class="onLenBg">显示30期</li>
+                     </ul>
+                     <div class="setfenBu">
+                         <label>号码分布方式</label>
+                         <select id="fenBu"><option value="1">普通分布</option><option value="2">奇偶分布</option><option value="3">质合分布</option><option value="4">除3余分布</option></select>
+                     </div>
+                     <div class="setfenBu">
+                         <label>基本号分区</label>
+                         <select id="areas"><option value="2">分2个区</option><option value="3">分3个区</option><option value="4">分4个区</option><option value="5">分5个区</option></select>
+                     </div>
+                     <div class="setBtn">
+                         <a id="calCon">取消</a>
+                         <a id="sureCon">确定</a>
+                     </div>
+                 </div>
+                 <a class="btn1">上一页</a>
+                 <a class="btn1">下一页</a>
+                 <a class="btn2" href="http://fx.cp2y.com/xsd11/" target="_blank">更多》</a>
+             </div>
+         </div>
+         <div class="main" id="minChartBox"></div>
+     </div>
+</div>
+<script src="res/js/require.js" data-main="res/js/play/10038"></script>
+</body>
+</html>

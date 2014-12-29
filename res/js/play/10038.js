@@ -13,7 +13,51 @@ require.config({
     }
   } 
 });
-require(['jquery','dialog','util','bootstrap'],function($,d,u,bootstrap){
+require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstrap,minChart){
+
+
+
+  window.C=minChart;
+  C.init('C.callback');
+  C.load();
+  $('#minChartBtnArea a').click(function(){
+    var d=$(this).attr('data');
+    $(this).toggleClass('onn');
+    if(d){
+      $('#minChartBox a['+d+']').toggleClass('has'+d);
+    }
+  });
+  $('#minChartBtn').click(function(){
+    $("#settingBg,#setting").show();
+    $(this).addClass('onn');
+    $('#setLen li').removeClass('onLenBg').eq((C.len/10)-1).addClass('onLenBg');
+    $('#areas').val(C.areas);
+    $('#fenBu').val(C.fenBu);
+  });
+  $('#setLen li').click(function(){
+    $(this).siblings().removeClass('onLenBg');
+    $(this).addClass('onLenBg');
+    $(this).parent().attr({'data':$(this).attr('data')});
+  });
+  $("#calCon").click(function(){
+    $("#settingBg,#setting").hide();
+    $("#minChartBtn").removeClass('onn');
+  });
+  $("#sureCon").click(function(){
+    C.areas=$('#areas').val();
+    C.fenBu=$('#fenBu').val();
+    C.len=$("#setLen").attr('data');
+    $("#settingBg,#setting").hide();
+    $("#minChartBtn").removeClass('onn');
+    C.setCondition();
+    C.draw();
+  });
+
+
+
+
+
+
   d.init();
   $("#buy").click(function(){
     d.alert('<a id="kkk">123</a>');
@@ -24,6 +68,7 @@ require(['jquery','dialog','util','bootstrap'],function($,d,u,bootstrap){
     d.close(k);
     //d.alert('123345',{width:"200px",height:"120px"});
   });
+
 
 
 
