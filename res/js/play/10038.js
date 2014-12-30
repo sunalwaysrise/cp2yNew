@@ -21,10 +21,21 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
   C.init('C.callback');
   C.load();
   $('#minChartBtnArea a').click(function(){
-    var d=$(this).attr('data');
+    var d=$(this).attr('data'),d2=$(this).attr('data2');
     $(this).toggleClass('onn');
     if(d){
+      C[d+'Hao']=!C[d+'Hao'];
       $('#minChartBox a['+d+']').toggleClass('has'+d);
+    }
+    if(d2){
+      if(d2=='fenQuXian'){
+        $("#minChartBox .split").toggle();
+      }else if(d2=='yiLou'){
+        $("#minChartBox .YL").toggle();
+      }else if(d2=='zhuTu'){
+        C.zhuTuShow=!C.zhuTuShow;
+        C.zhuTu();
+      }
     }
   });
   $('#minChartBtn').click(function(){

@@ -14,22 +14,22 @@ define(['jquery'],function($){
     chuanHao:false,
     fenQuXian:false,
     yiLou:false,
-    zhuTu:false,
     len:30,
     areas:4,
     fenBu:1,/*1:普通;2:奇偶;3:质合;4:除3余*/
+    zhuTuShow:false,
     init:function(){
       /*从cookies中读取是自定义数据  */
       var d=localStorage.getItem('minChart');
       if(d){
         d=eval("("+d+")");
-        if(d.chongHao){this.chongHao=true;}
-        if(d.lianHao){this.lianHao=true;}
-        if(d.bianHao){this.bianHao=true;}
-        if(d.chuanHao){this.chuanHao=true;}
+        if(d.chongHao){this.chongHao=true;$('#minChartBtnArea a').eq(0).addClass('onn');}
+        if(d.lianHao){this.lianHao=true;$('#minChartBtnArea a').eq(1).addClass('onn');}
+        if(d.bianHao){this.bianHao=true;$('#minChartBtnArea a').eq(2).addClass('onn');}
+        if(d.chuanHao){this.chuanHao=true;$('#minChartBtnArea a').eq(3).addClass('onn');}
         if(d.fenQuXian){this.fenQuXian=true;}
         if(d.yiLou){this.yiLou=true;}
-        if(d.zhuTu){this.zhuTu=true;}
+        if(d.zhuTuShow){this.zhuTuShow=true;}
         if(d.len){this.len= d.len;}
         if(d.areas){this.areas= d.areas;}
         if(d.fenBu){this.fenBu= d.fenBu;}
@@ -37,7 +37,7 @@ define(['jquery'],function($){
     },
     setCondition:function(){
       /*写入cookies*/
-      var k='{chongHao:'+this.chongHao+',lianHao:'+this.lianHao+',bianHao:'+this.bianHao+',chuanHao:'+this.chuanHao+',fenQuXian:'+this.fenQuXian+',yiLou:'+this.yiLou+',zhuTu:'+this.zhuTu+',len:'+this.len+',areas:'+this.areas+',fenBu:'+this.fenBu+'}';
+      var k='{chongHao:'+this.chongHao+',lianHao:'+this.lianHao+',bianHao:'+this.bianHao+',chuanHao:'+this.chuanHao+',fenQuXian:'+this.fenQuXian+',yiLou:'+this.yiLou+',zhuTuShow:'+this.zhuTuShow+',len:'+this.len+',areas:'+this.areas+',fenBu:'+this.fenBu+'}';
       localStorage.setItem('minChart',k);
     },
     load:function(cb){
@@ -65,18 +65,20 @@ define(['jquery'],function($){
     chongNumber :function(nt,nl,ni){
       var ds=this.DD1;
       var count=0,i;
-      if(nt==1)
-      {
+      if(nt==1){
         i=ni-1;
-        if(i>=0)
-          if(this.containNumber(ds.data[i].bn,ds.data[ni].bn[nl]))
+        if(i>=0){
+          if(this.containNumber(ds.data[i].bn,ds.data[ni].bn[nl])){
             count++;
-        if(count<1)
-        {
+          }
+        }
+        if(count<1){
           i=ni+1;
-          if(i<ds.data.length)
-            if(this.containNumber(ds.data[i].bn,ds.data[ni].bn[nl]))
+          if(i<ds.data.length){
+            if(this.containNumber(ds.data[i].bn,ds.data[ni].bn[nl])){
               count++;
+            }
+          }
         }
       }
       return count>0;
@@ -93,8 +95,7 @@ define(['jquery'],function($){
       var ds=this.DD1;
       for(var i=0;i<ds.data.length;i++){
         ds.data[i].lian=[];
-        for(var j=0;j<ds.bnl;j++)
-        {
+        for(var j=0;j<ds.bnl;j++){
           if(this.lianNumber(1,j,i)){
             ds.data[i].lian[j]=true;
           }else{
@@ -344,8 +345,6 @@ define(['jquery'],function($){
       this._Bian();
       this._Chuan();
       D=this.DD1;
-      //console.log(D);
-      //绘制头部
       html.push('<div class="line line1"><div class="issues">奖期</div>');
       function isZhiShu(n){
         if(n<1){
@@ -425,9 +424,6 @@ define(['jquery'],function($){
       html.push('<div class="hm">号码</div>');
       html.push('<div class="area">'+this.areas+'分区</div>');
       html.push('<div class="hz">和值</div></div>');
-      //头部绘制结束
-      //开始绘制主体
-      //i=0;
       D= this.DD1.data;
       i= D.length-1;
       if(this.fenBu==1){//普通分布
@@ -461,8 +457,7 @@ define(['jquery'],function($){
           jen= JI.length;
           j=0;
           sum=0;
-          h=[];
-          //循环奇数下标
+          h=[]; //循环奇数下标
           for(j;j<jen;j++){
             if(E[JI[j]]==0){
               //html.push('<div class="n"><a>'+addZero(JI[j]+1)+'</a></div>');
@@ -474,8 +469,7 @@ define(['jquery'],function($){
               h.push(0);
             }
           }
-          //循环偶数下标
-          j=0;jen=OU.length;
+          j=0;jen=OU.length;//循环偶数下标
           for(j;j<jen;j++){
             if(E[OU[j]]==0){
               //html.push('<div class="n"><a>'+addZero(OU[j]+1)+'</a></div>');
@@ -500,8 +494,7 @@ define(['jquery'],function($){
           j=0;
           sum=0;
           h=[];
-          //循环质数下标
-          for(j;j<jen;j++){
+          for(j;j<jen;j++){//循环质数下标
             if(E[ZHI[j]]==0){
               //html.push('<div class="n"><a>'+addZero(ZHI[j]+1)+'</a></div>');
               html.push('<div class="n">'+this._markPro(D[i].bian,D[i].chong,D[i].chuan,D[i].lian,D[i].n,addZero(ZHI[j]+1))+'</div>');
@@ -512,8 +505,7 @@ define(['jquery'],function($){
               h.push(0);
             }
           }
-          //循环合数下标
-          j=0;jen=HE.length;
+          j=0;jen=HE.length; //循环合数下标
           for(j;j<jen;j++){
             if(E[HE[j]]==0){
               //html.push('<div class="n"><a>'+addZero(HE[j]+1)+'</a></div>');
@@ -538,8 +530,7 @@ define(['jquery'],function($){
           j=0;
           sum=0;
           h=[];
-          //循环余0下标
-          for(j;j<jen;j++){
+          for(j;j<jen;j++){//循环余0下标
             if(E[Y0[j]]==0){
               //html.push('<div class="n"><a>'+addZero(Y0[j]+1)+'</a></div>');
               html.push('<div class="n">'+this._markPro(D[i].bian,D[i].chong,D[i].chuan,D[i].lian,D[i].n,addZero(Y0[j]+1))+'</div>');
@@ -550,8 +541,7 @@ define(['jquery'],function($){
               h.push(0);
             }
           }
-          //循环余1下标
-          j=0;jen=Y1.length;
+          j=0;jen=Y1.length; //循环余1下标
           for(j;j<jen;j++){
             if(E[Y1[j]]==0){
               //html.push('<div class="n"><a>'+addZero(Y1[j]+1)+'</a></div>');
@@ -563,8 +553,7 @@ define(['jquery'],function($){
               h.push(0);
             }
           }
-          //循环余2下标
-          j=0;jen=Y2.length;
+          j=0;jen=Y2.length; //循环余2下标
           for(j;j<jen;j++){
             if(E[Y2[j]]==0){
               //html.push('<div class="n"><a>'+addZero(Y2[j]+1)+'</a></div>');
@@ -576,6 +565,9 @@ define(['jquery'],function($){
               h.push(0);
             }
           }
+          html.push('<div class="hm">'+D[i].n+'</div>');
+          html.push('<div class="area">'+this._fenQu(h)+'</div>');
+          html.push('<div class="hz">'+sum+'</div>');
           html.push('</div>');
         }
       }
@@ -595,6 +587,19 @@ define(['jquery'],function($){
         html.push('<div class="split line5_4"></div>');
       }
       $('#minChartBox').html(html.join(''));
+      this.zhuTu();
+      if(this.chongHao){
+        $('#minChartBox a[chong]').addClass('haschong');
+      }
+      if(this.lianHao){
+        $('#minChartBox a[lian]').addClass('haslian');
+      }
+      if(this.bianHao){
+        $('#minChartBox a[bian]').addClass('hasbian');
+      }
+      if(this.chuanHao){
+        $('#minChartBox a[chuan]').addClass('haschuan');
+      }
     },
     _fenQu:function(h){
       var i= 0,len= h.length,r='',a1=[],a2=[];
@@ -662,13 +667,41 @@ define(['jquery'],function($){
     },
     _markPro:function(bian,chong,chuan,lian,n,a){
       var i= n.split(' ').indexOf(a),p='';
-      console.log(i);
-      console.log(n,a);
       if(bian[i]){p+=' bian';}
       if(chong[i]){p+=' chong';}
       if(chuan[i]){p+=' chuan';}
       if(lian[i]){p+=' lian';}
       return '<a '+p+'>'+a+'</a>';
+    },
+    zhuTu:function(){
+      if(this.zhuTuShow){
+        var D=$("#minChartBox .line"),i=0,k=[],E,len= D.eq(0).children('.n').length, j,tmp;
+        for(i;i<len;i++){
+          k.push(i);
+        }
+        i=D.length-1;
+        //i=2;
+        for(i;i>0;i--){
+          E= D.eq(i).children('.n');
+          j=0;
+          tmp=[];
+          len= k.length;
+          if(len==0){
+            break;
+          }
+          for(j;j< len;j++){
+            if(E.eq(k[j]).children('a').size()==0){
+              E.eq(k[j]).addClass('grey');
+              tmp.push(k[j]);
+            }
+            if(j== len-1){
+              k=tmp;
+            }
+          }
+        }
+      }else{
+        $('#minChartBox .grey').removeClass('grey');
+      }
     }
   };
   return d;

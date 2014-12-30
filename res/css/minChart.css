@@ -25,6 +25,7 @@
 .minChart .main .issues,.minChart .main .n,.minChart .main .hm,.minChart .main .area,.minChart .main .hz{height:30px;border-right:1px solid #e8e8e8;text-align:center;float:left;}
 .minChart .main .issues{width:72px;}
 .minChart .main .n{width:40px;position:relative;background:#fff;}
+.minChart .main .grey{background:#f0f0f0;}
 .minChart .main .n span{color:#aaa;}
 .minChart .main .n a{width:24px;height:24px;border-radius:12px;background:red;color:#fff;display:inline-block;line-height:24px;}
 .minChart .main .n .hasbian,.minChart .main .n .haschong,.minChart .main .n .haslian,.minChart .main .n .haschuan{background-color:blue!important;}
