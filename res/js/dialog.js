@@ -29,13 +29,17 @@ define(['jquery','util'],function($,u){
       $("#cp2yLock"+i).css({"width":lockWidth,"height":lockHeight}).show();
   	},
     _flag:false,
-  	alert:function(x,css){
+  	alert:function(o){
       if(this._flag){return false;}
       var i=$(".cp2yLock").size();
   		window.lock=true;
   		this._lock(i);
-      var o={t:'提示信息',c:x};
-  		this._open(o,i,css);
+      if(!o.type){o.type='warn';}
+      var k={
+        t:'提示信息',
+        c:'<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns"><a class="closeDialog btn1" data='+i+'>确定</a></div>'
+      };
+  		this._open(k,i);
   	},
     open:function(o,css,cName){
       var i=$(".cp2yLock").size();
@@ -56,7 +60,7 @@ define(['jquery','util'],function($,u){
     },
     _open:function(o,i,css,cName){
   		var that=this,d=[];
-      d.push('<div class="dialogTitle"><span>'+o.t+'</span><a class="closeDialog" data="'+i+'">X</a></div>');
+      d.push('<div class="dialogTitle"><i class="l"></i><span>'+o.t+'</span><a class="closeDialog" data="'+i+'"></a><i class="r"></i></div>');
       d.push('<div class="dialogContent">'+o.c+'</div>');
       $('body').append('<div class="cp2yDialogBox" data="'+i+'" id="cp2yDialogBox'+i+'"></div>');
       var ob=$("#cp2yDialogBox"+i);

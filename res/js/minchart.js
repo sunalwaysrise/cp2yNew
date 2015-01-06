@@ -45,7 +45,6 @@ define(['jquery'],function($){
     },
     callback:function(D){
       this.DD1=D;
-
       //if(this.fenBu==1){}
       this.draw();
     },

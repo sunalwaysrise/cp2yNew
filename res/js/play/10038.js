@@ -71,7 +71,7 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
 
   d.init();
   $("#buy").click(function(){
-    d.alert('<a id="kkk">123</a>');
+    d.alert({type:'warn',content:'测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容'});
   });
   $('body').on('click','#kkk',function(){
     var k=$(this).parents(".cp2yDialogBox").attr('data');
