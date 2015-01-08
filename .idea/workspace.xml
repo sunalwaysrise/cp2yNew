@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/js/minchart.js" afterPath="$PROJECT_DIR$/res/js/minChart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/play/10038.js" afterPath="$PROJECT_DIR$/res/js/play/10038.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/css/dialog.css" afterPath="$PROJECT_DIR$/res/css/dialog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/dialog.js" afterPath="$PROJECT_DIR$/res/js/dialog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cp2yNew.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420522255452" ignored="false" />
+    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420619260171" ignored="false" />
     <file path="/index.html" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418118056906" ignored="false" />
     <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420523835454" ignored="false" />
     <file path="/10038.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420523796944" ignored="false" />
@@ -389,8 +386,8 @@
         <option value="$PROJECT_DIR$/res/css/minChart.css" />
         <option value="$PROJECT_DIR$/res/js/minChart.js" />
         <option value="$PROJECT_DIR$/res/js/dialog.js" />
-        <option value="$PROJECT_DIR$/res/js/play/10038.js" />
         <option value="$PROJECT_DIR$/res/css/dialog.css" />
+        <option value="$PROJECT_DIR$/res/js/play/10038.js" />
       </list>
     </option>
   </component>
@@ -431,88 +428,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cp2yNew" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="play" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -596,7 +511,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10739857" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1185362" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -677,11 +592,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="46" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.1886121" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="87" selection-start="363" selection-end="363" vertical-scroll-proportion="0.23487544" />
@@ -695,11 +605,6 @@
     <entry file="file://$PROJECT_DIR$/res/js/lottery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/bt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="138" selection-start="357" selection-end="357" vertical-scroll-proportion="0.27130434" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -734,40 +639,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/minChart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="194" selection-end="194" vertical-scroll-proportion="0.17081851">
-          <folding>
-            <element signature="e#17814#19335#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="30" selection-start="194" selection-end="194" vertical-scroll-proportion="0.17081851" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="958" selection-end="958" vertical-scroll-proportion="0.17081851">
+        <state line="8" column="16" selection-start="958" selection-end="958" vertical-scroll-proportion="0.17081851" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="99" selection-start="1867" selection-end="1871" vertical-scroll-proportion="0.8327402" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="10" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.16725978" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/bt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="508" selection-end="508" vertical-scroll-proportion="0.39652175">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/play/10038.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="27" selection-start="1660" selection-end="1660" vertical-scroll-proportion="0.076512456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="99" selection-start="1867" selection-end="1871" vertical-scroll-proportion="0.8327402">
-          <folding />
+        <state line="37" column="50" selection-start="875" selection-end="875" vertical-scroll-proportion="0.4173913">
+          <folding>
+            <element signature="e#430#873#0" expanded="false" />
+            <element signature="e#912#1124#0" expanded="false" />
+            <element signature="e#1161#1304#0" expanded="false" />
+            <element signature="e#1338#1422#0" expanded="false" />
+            <element signature="e#1457#1676#0" expanded="false" />
+            <element signature="e#1720#1809#0" expanded="false" />
+            <element signature="e#1852#2007#0" expanded="false" />
+            <element signature="e#2065#9221#0" expanded="false" />
+            <element signature="e#9288#9306#0" expanded="false" />
+            <element signature="e#9348#9375#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

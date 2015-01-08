@@ -15,8 +15,6 @@ require.config({
 });
 require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstrap,minChart){
 
-
-
   window.C=minChart;
   C.init('C.callback');
   C.load();
@@ -64,11 +62,6 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
     C.draw();
   });
 
-
-
-
-
-
   d.init();
   $("#buy").click(function(){
     d.alert({type:'warn',content:'测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容'});
@@ -79,10 +72,6 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
     d.close(k);
     //d.alert('123345',{width:"200px",height:"120px"});
   });
-
-
-
-
 
   var l={};
   l.lid=10046;
@@ -292,3 +281,4 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
     l.selected(this);
   });
 });
+
