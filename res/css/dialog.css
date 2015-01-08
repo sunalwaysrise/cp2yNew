@@ -8,7 +8,7 @@
 .dialogTitle a{width:19px;height:19px;position:absolute;right:10px;top:6px;color:#fff;line-height:31px;text-align:center;background:url(../images/dialog/main.png) no-repeat 0 -70px;cursor:pointer;}
 .dialogContent{background:#fff;padding:10px;line-height:20px;text-align:center;}
 .dialogContent .Alert{width:100%;overflow:hidden;text-overflow:ellipsis;word-break:normal;text-align:center;}
-.dialogContent .Alert span{padding:30px 0 30px 50px;background-repeat:no-repeat;background-position:0 center;display:inline-block;}
+.dialogContent .Alert span{padding:30px 0 30px 50px;background-repeat:no-repeat;background-position:0 center;display:inline-block;color:#666;}
 .dialogContent .Alert .warn{background-image:url(../images/dialog/warn.png)}
 .dialogContent .Alert .error{background-image:url(../images/dialog/error.png);}
 .dialogContent .Alert .ok{background-image:url(../images/dialog/ok.png);}

@@ -11,7 +11,7 @@ require.config({
       deps:['jquery'],
       exports:'bootstrap'
     }
-  } 
+  }
 });
 require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstrap,minChart){
 
