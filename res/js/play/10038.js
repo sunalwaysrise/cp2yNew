@@ -15,6 +15,23 @@ require.config({
 });
 require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstrap,minChart){
 
+  var test=function(){
+    d.frame({
+      title:'方案认购确认信息',
+      url:'http://www.cp2y.com/buy/schemeConfirm.htm?schemeId=25693300&money=2&joinType=0',
+      ok:'确认投注',
+      okFn:function(){
+        alert('确认回调方法');
+      },
+      cancel:'取消',
+      css:{
+        width:584,
+        height:320
+      }
+    });
+  }
+
+
   window.C=minChart;
   C.init('C.callback');
   C.load();
@@ -64,7 +81,8 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
 
   d.init();
   $("#buy").click(function(){
-    d.alert({type:'warn',content:'测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容'});
+    test();
+    //d.alert({type:'warn',content:'测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容测试的内容'});
   });
   $('body').on('click','#kkk',function(){
     var k=$(this).parents(".cp2yDialogBox").attr('data');

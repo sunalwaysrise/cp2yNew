@@ -47,7 +47,29 @@ define(['jquery','util'],function($,u){
       this._lock(i);
       this._open(o,i,css,cName);
     },
-    frame:function(){},
+    frame:function(o){
+      var i=$(".cp2yLock").size();
+      window.lock=true;
+      this._lock(i);
+      var css={width:"584px",height:"391px"},x;
+      if(o.css){
+        css.width=o.css.width;
+        css.height=(o.css.height+92);
+      }
+      x={
+        t: o.title,
+        c:'<div style="height:'+(css.height-92)+'px"><iframe src="'+o.url+'" class="iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe></div><div class="Btns">'
+      }
+      if(o.ok){
+        x.c+='<a id="frameBtn'+i+'" class="closeDialog btn1" data='+i+'>'+ o.ok+'</a>';
+        x.okFn= o.okFn;
+      }
+      if(o.cancel){
+        x.c+='<a class="closeDialog btn1" data='+i+'>'+ o.cancel+'</a>';
+      }
+      x.c+='</div>';
+      this._open(x,i,css,false);
+    },
     close:function(i){
       $("#cp2yLock"+i).remove();
       $("#cp2yDialogBox"+i).remove();
@@ -71,6 +93,11 @@ define(['jquery','util'],function($,u){
         ob.css(css);
       }
       ob.html(d.join('')).show();
+      if(o.okFn){
+        $('#frameBtn'+i).off().on('click',function(){
+          o.okFn();
+        });
+      }
       u.throttle(this._set(ob,i), 50, 100);
   		$(window).resize(function(){
         if(window.lock){
