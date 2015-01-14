@@ -40,7 +40,7 @@ define(['jquery','util'],function($,u){
         c:''
       },c='<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns">';
       if(o.link){
-        c='<a href="'+o.link+'" class="closeDialog btn1" data='+i+'>确定</a></div>';
+        c='<a href="'+o.link+'" target="_blank" class="closeDialog btn1" data='+i+'>确定</a></div>';
       }else{
         c='<a class="closeDialog btn1" data='+i+'>确定</a></div>';
       }
