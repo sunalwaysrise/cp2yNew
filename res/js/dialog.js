@@ -37,8 +37,11 @@ define(['jquery','util'],function($,u){
       if(!o.type){o.type='warn';}
       var k={
         t:'提示信息',
-        c:'<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns"><a class="closeDialog btn1" data='+i+'>确定</a></div>'
+        c:'<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns"><a class="closeDialog btn1" id="frameBtn'+i+'" data='+i+'>确定</a></div>'
       };
+      if(o.okFn){
+        k.okFn= o.okFn;
+      }
   		this._open(k,i);
   	},
     open:function(o,css,cName){

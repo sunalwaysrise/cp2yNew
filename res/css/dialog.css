@@ -13,5 +13,5 @@
 .dialogContent .Alert .error{background-image:url(../images/dialog/error.png);}
 .dialogContent .Alert .ok{background-image:url(../images/dialog/ok.png);}
 .dialogContent .Btns{height:45px;}
-.dialogContent .Btns a{width:102px;height:30px;line-height:30px;color:#fff;background-image:url(../images/dialog/btn.png);display:inline-block;cursor:pointer;margin:0 10px;}
+.dialogContent .Btns a{width:102px;height:30px;line-height:30px;color:#fff;background-image:url(../images/dialog/btn.png);display:inline-block;cursor:pointer;margin:0 10px;text-decoration:none;}
 .dialogContent .iframe{width:100%;height:100%;}
