@@ -31,18 +31,24 @@ define(['jquery','util'],function($,u){
     _flag:false,
   	alert:function(o){
       if(this._flag){return false;}
-      var i=$(".cp2yLock").size();
-  		window.lock=true;
-  		this._lock(i);
+      var i=$(".cp2yLock").size();//中间有关闭 i不唯一 加一个 index 来记录
+      window.lock=true;
+      this._lock(i);
       if(!o.type){o.type='warn';}
       var k={
         t:'提示信息',
-        c:'<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns"><a class="closeDialog btn1" id="frameBtn'+i+'" data='+i+'>确定</a></div>'
-      };
+        c:''
+      },c='<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns">';
+      if(o.link){
+        c='<a href="'+o.link+'" class="closeDialog btn1" data='+i+'>确定</a></div>';
+      }else{
+        c='<a class="closeDialog btn1" data='+i+'>确定</a></div>';
+      }
+      k.c=c;
       if(o.okFn){
         k.okFn= o.okFn;
       }
-  		this._open(k,i);
+      this._open(k,i);
   	},
     open:function(o,css,cName){
       var i=$(".cp2yLock").size();
