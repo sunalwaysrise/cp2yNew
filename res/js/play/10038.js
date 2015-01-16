@@ -20,9 +20,7 @@ require(['jquery','dialog','util','bootstrap','minChart'],function($,d,u,bootstr
       title:'方案认购确认信息',
       url:'http://www.cp2y.com/buy/schemeConfirm.htm?schemeId=25693300&money=2&joinType=0',
       ok:'确认投注',
-      okFn:function(){
-        alert('确认回调方法');
-      },
+      okFn:function(){alert('确认回调方法');},
       cancel:'取消',
       css:{
         width:584,

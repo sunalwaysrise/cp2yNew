@@ -40,9 +40,9 @@ define(['jquery','util'],function($,u){
         c:''
       },c='<div class="Alert"><span class="'+ o.type+'">'+ o.content+'</span></div><div class="Btns">';
       if(o.link){
-        c='<a href="'+o.link+'" target="_blank" class="closeDialog btn1" data='+i+'>确定</a></div>';
+        c+='<a href="'+o.link+'" id="frameBtn'+i+'" target="_blank" class="closeDialog btn1" data='+i+'>确定</a></div>';
       }else{
-        c='<a class="closeDialog btn1" data='+i+'>确定</a></div>';
+        c+='<a id="frameBtn'+i+'" class="closeDialog btn1" data='+i+'>确定</a></div>';
       }
       k.c=c;
       if(o.okFn){
@@ -67,14 +67,18 @@ define(['jquery','util'],function($,u){
       }
       x={
         t: o.title,
-        c:'<div style="height:'+(css.height-92)+'px"><iframe src="'+o.url+'" class="iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe></div><div class="Btns">'
+        c:'<div style="height:'+(css.height-92)+'px"><iframe src="'+o.url+'" class="iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>'
       }
-      if(o.ok){
-        x.c+='<a id="frameBtn'+i+'" class="closeDialog btn1" data='+i+'>'+ o.ok+'</a>';
-        x.okFn= o.okFn;
-      }
-      if(o.cancel){
-        x.c+='<a class="closeDialog btn1" data='+i+'>'+ o.cancel+'</a>';
+      if(!o.btns){
+        x.c+='<div class="Btns">';
+        if(o.ok){
+          x.c+='<a id="frameBtn'+i+'" class="closeDialog btn1" data='+i+'>'+ o.ok+'</a>';
+          x.okFn= o.okFn;
+        }
+        if(o.cancel){
+          x.c+='<a class="closeDialog btn1" data='+i+'>'+ o.cancel+'</a>';
+        }
+        x.c+='</div>';
       }
       x.c+='</div>';
       this._open(x,i,css,false);
