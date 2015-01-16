@@ -1,6 +1,6 @@
 .cp2yLock{position:absolute;z-index:999;top:0;left:0;right:0;bottom:0;background:#000;opacity:0.2;filter:Alpha(opacity=30);_background:none;display:none;}
 .cp2yDialogBox{width:350px;padding:8px;background:#9fa0a3;background:rgba(0,0,0,.15);position:absolute;z-index:999;display:none;}
-.dialogTitle{width:100%;height:31px;line-height:31px;background:url(../images/dialog/main.png) repeat-x 0 0;position:relative;cursor:move;}
+.dialogTitle{width:100%;height:31px;line-height:31px;background:url(../images/dialog/main.png) repeat-x 0 0;position:relative;cursor:move;text-align:left;}/*add*/
 .dialogTitle i{position:absolute;top:0;display:inline-block;width:10px;height:31px;}
 .dialogTitle i.l{left:0;background:url(../images/dialog/main.png) no-repeat 0 -35px;}
 .dialogTitle i.r{right:0;background:url(../images/dialog/main.png) no-repeat -33px -35px;}
@@ -8,10 +8,12 @@
 .dialogTitle a{width:19px;height:19px;position:absolute;right:10px;top:6px;color:#fff;line-height:31px;text-align:center;background:url(../images/dialog/main.png) no-repeat 0 -70px;cursor:pointer;}
 .dialogContent{background:#fff;padding:0px;line-height:20px;text-align:center;}
 .dialogContent .Alert{padding:10px;overflow:hidden;text-overflow:ellipsis;word-break:normal;text-align:center;}
-.dialogContent .Alert span{padding:30px 0 30px 50px;background-repeat:no-repeat;background-position:0 center;display:inline-block;color:#666;}
+.dialogContent .Alert span{padding:30px 0 30px 50px;background-repeat:no-repeat;background-position:0 center;display:inline-block;color:#666;text-align:left;}/*add*/
 .dialogContent .Alert .warn{background-image:url(../images/dialog/warn.png)}
 .dialogContent .Alert .error{background-image:url(../images/dialog/error.png);}
 .dialogContent .Alert .ok{background-image:url(../images/dialog/ok.png);}
-.dialogContent .Btns{height:45px;}
-.dialogContent .Btns a{width:102px;height:30px;line-height:30px;color:#fff;background-image:url(../images/dialog/btn.png);display:inline-block;cursor:pointer;margin:0 10px;text-decoration:none;}
+.dialogContent .Btns{height:50px;padding-top:10px;}/*- add -*/
+.dialogContent .Btns a{width:102px;height:30px;line-height:30px;color:#fff;background-image:url(../images/dialog/btn.png);display:inline-block;cursor:pointer;margin:0 10px;}/*- add -*/
+.dialogContent .Btns p{display:none;position:relative;top:-10px;width:100%;height:65px;line-height:25px;color:#666;}/*- add -*/
+.dialogContent .Btns p .loadding{display:block;width:35px;height:35px;margin:0 auto;background:url(../images/dialog/loadding.gif) no-repeat center -10px;}/*- add -*/
 .dialogContent .iframe{width:100%;height:100%;}

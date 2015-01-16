@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/play/10038.js" afterPath="$PROJECT_DIR$/res/js/play/10038.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/dialog.js" afterPath="$PROJECT_DIR$/res/js/dialog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/css/dialog.css" afterPath="$PROJECT_DIR$/res/css/dialog.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cp2yNew.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421403051010" ignored="false" />
+    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421409176108" ignored="false" />
     <file path="/index.html" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418118056906" ignored="false" />
     <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421243194952" ignored="false" />
     <file path="/10038.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420787643063" ignored="false" />
@@ -355,7 +354,28 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="dialog.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="43" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="12" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.38078293">
+              <folding>
+                <marker date="1421403084000" expanded="false" signature="2704:2711" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -388,8 +408,8 @@
         <option value="$PROJECT_DIR$/res/js/minChart.js" />
         <option value="$PROJECT_DIR$/res/js/play/10038.js" />
         <option value="$PROJECT_DIR$/res/js/main.js" />
-        <option value="$PROJECT_DIR$/res/css/dialog.css" />
         <option value="$PROJECT_DIR$/res/js/dialog.js" />
+        <option value="$PROJECT_DIR$/res/css/dialog.css" />
       </list>
     </option>
   </component>
@@ -568,12 +588,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09307876" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14558473" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -726,18 +746,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="193" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.3202847" />
+        <state line="18" column="43" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="63" selection-start="1936" selection-end="1936" vertical-scroll-proportion="0.46619216">
+        <state line="43" column="12" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.38078293">
           <folding>
-            <element signature="e#2284#2404#0" expanded="false" />
-            <element signature="e#3274#3422#0" expanded="false" />
-            <element signature="e#3445#3527#0" expanded="false" />
-            <element signature="e#3562#4340#0" expanded="false" />
-            <marker date="1421403084000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421403084000" expanded="false" signature="2704:2711" placeholder="..." />
           </folding>
         </state>
       </provider>
