@@ -32,7 +32,7 @@ define(['jquery','util'],function($,u){
   	alert:function(o){
       if(this._flag){return false;}
       var i=$(".cp2yLock").size();//中间有关闭 i不唯一 加一个 index 来记录
-      window.lock=true;
+      window.dialogLock=true;
       this._lock(i);
       if(!o.type){o.type='warn';}
       var k={
@@ -52,13 +52,13 @@ define(['jquery','util'],function($,u){
   	},
     open:function(o,css,cName){
       var i=$(".cp2yLock").size();
-      window.lock=true;
+      window.dialogLock=true;
       this._lock(i);
       this._open(o,i,css,cName);
     },
     frame:function(o){
       var i=$(".cp2yLock").size();
-      window.lock=true;
+      window.dialogLock=true;
       this._lock(i);
       var css={width:"584px",height:"391px"},x;
       if(o.css){
@@ -86,8 +86,8 @@ define(['jquery','util'],function($,u){
     close:function(i){
       $("#cp2yLock"+i).remove();
       $("#cp2yDialogBox"+i).remove();
-      if($(".cp2yLock").size()>0){
-        window.lock=false;
+      if($(".cp2yLock").size()==0){
+        window.dialogLock=false;
       }
     },
     _lock:function(i){
@@ -113,7 +113,7 @@ define(['jquery','util'],function($,u){
       }
       u.throttle(this._set(ob,i), 50, 100);
   		$(window).resize(function(){
-        if(window.lock){
+        if(window.dialogLock){
           u.throttle(that._set(ob,i), 50, 100);
         }
       });

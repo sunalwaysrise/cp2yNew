@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/css/dialog.css" afterPath="$PROJECT_DIR$/res/css/dialog.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/dialog.js" afterPath="$PROJECT_DIR$/res/js/dialog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cp2yNew.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421409176108" ignored="false" />
+    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421635670856" ignored="false" />
     <file path="/index.html" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418118056906" ignored="false" />
-    <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421243194952" ignored="false" />
+    <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421635856093" ignored="false" />
     <file path="/10038.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420787643063" ignored="false" />
     <file path="/dialog.css" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421218151957" ignored="false" />
     <file path="/util.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418103099859" ignored="false" />
@@ -355,21 +355,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dialog.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="43" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dialog.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="12" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.38078293">
+            <state line="82" column="32" selection-start="3230" selection-end="3230" vertical-scroll-proportion="0.59430605">
               <folding>
-                <marker date="1421403084000" expanded="false" signature="2704:2711" placeholder="..." />
+                <marker date="1421635878000" expanded="false" signature="2722:2729" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -408,8 +399,8 @@
         <option value="$PROJECT_DIR$/res/js/minChart.js" />
         <option value="$PROJECT_DIR$/res/js/play/10038.js" />
         <option value="$PROJECT_DIR$/res/js/main.js" />
-        <option value="$PROJECT_DIR$/res/js/dialog.js" />
         <option value="$PROJECT_DIR$/res/css/dialog.css" />
+        <option value="$PROJECT_DIR$/res/js/dialog.js" />
       </list>
     </option>
   </component>
@@ -444,6 +435,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -494,27 +486,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cp2yNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,16 +503,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="112" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="901" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="901" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="107" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="104" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -746,16 +719,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="43" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.0">
+        <state line="18" column="57" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.38434163">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="12" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.38078293">
+        <state line="82" column="32" selection-start="3230" selection-end="3230" vertical-scroll-proportion="0.59430605">
           <folding>
-            <marker date="1421403084000" expanded="false" signature="2704:2711" placeholder="..." />
+            <marker date="1421635878000" expanded="false" signature="2722:2729" placeholder="..." />
           </folding>
         </state>
       </provider>
