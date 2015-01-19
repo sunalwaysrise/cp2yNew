@@ -18,17 +18,6 @@ define(['jquery','util'],function($,u){
       });
     },
   	_set:function(_obj,i){
-
-
-//      var s = $.browser.msie ?
-//      {w:document.documentElement.clientWidth,h:document.documentElement.clientHeight} : ($.browser.opera ?
-//      {w:Math.min(window.innerWidth, document.body.clientWidth),h:Math.min(window.innerHeight, document.body.clientHeight)} :
-//      {w:Math.min(window.innerWidth, document.documentElement.clientWidth),h:Math.min(window.innerHeight, document.documentElement.clientHeight)});
-//      s.left = document.documentElement.scrollLeft || document.body.scrollLeft;
-//      s.top = document.documentElement.scrollTop || document.body.scrollTop;
-      var s={};
-      s.sw = document.documentElement.scrollWidth || document.body.scrollWidth;
-      s.sh = document.documentElement.scrollHeight || document.body.scrollHeight;
       var t=document.documentElement.scrollTop || document.body.scrollTop,
         viewHeight=$(window).height(),
         viewWidth=$(window).width(),
@@ -36,7 +25,7 @@ define(['jquery','util'],function($,u){
         _objWidth=_obj.width(),
         dialogTop=(viewHeight / 2) - (_objHeight / 2) + t,dialogLeft = (viewWidth / 2) - (_objWidth / 2);
       _obj.css({top:dialogTop,left:dialogLeft});
-      $("#cp2yLock"+i).css({"width": s.sw,"height": s.sh}).show();
+      $("#cp2yLock"+i).css({"width": u.screen().sw,"height": u.screen().sh}).show();
 
   	},
     _flag:false,

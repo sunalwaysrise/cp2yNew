@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/dialog.js" afterPath="$PROJECT_DIR$/res/js/dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/js/jquery.min.js" afterPath="$PROJECT_DIR$/res/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cp2yNew.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421635670856" ignored="false" />
     <file path="/index.html" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418118056906" ignored="false" />
-    <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421637295015" ignored="false" />
+    <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421646578345" ignored="false" />
     <file path="/10038.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420787643063" ignored="false" />
     <file path="/dialog.css" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421218151957" ignored="false" />
     <file path="/util.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418103099859" ignored="false" />
@@ -358,10 +358,19 @@
       <file leaf-file-name="dialog.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="2019" selection-end="2029" vertical-scroll-proportion="0.6405694">
+            <state line="19" column="26" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-1.3274021">
               <folding>
-                <marker date="1421637368000" expanded="false" signature="3396:3403" placeholder="..." />
+                <marker date="1421646682000" expanded="false" signature="2652:2659" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/js/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -369,8 +378,10 @@
       <file leaf-file-name="jquery.min.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9301" column="0" selection-start="299087" selection-end="299087" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="4" column="30" selection-start="0" selection-end="95786" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -716,11 +727,6 @@
         <state line="0" column="0" selection-start="0" selection-end="329" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1462" selection-end="1482" vertical-scroll-proportion="0.76868325" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="57" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.38434163">
@@ -730,16 +736,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9301" column="0" selection-start="299087" selection-end="299087" vertical-scroll-proportion="0.0">
+        <state line="4" column="30" selection-start="0" selection-end="95786" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="2019" selection-end="2029" vertical-scroll-proportion="0.6405694">
+        <state line="19" column="26" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-1.3274021">
           <folding>
-            <marker date="1421637368000" expanded="false" signature="3396:3403" placeholder="..." />
+            <marker date="1421646682000" expanded="false" signature="2652:2659" placeholder="..." />
           </folding>
         </state>
       </provider>
