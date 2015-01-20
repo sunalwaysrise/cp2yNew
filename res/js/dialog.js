@@ -67,7 +67,7 @@ define(['jquery','util'],function($,u){
       }
       x={
         t: o.title,
-        c:'<div style="height:'+(css.height-92)+'px"><iframe src="'+o.url+'" class="iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>'
+        c:'<div style="height:'+(css.height-92)+'px"><iframe src="'+o.url+'" class="iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe></div>'
       }
       if(!o.btns){
         x.c+='<div class="Btns">';
@@ -80,7 +80,6 @@ define(['jquery','util'],function($,u){
         }
         x.c+='</div>';
       }
-      x.c+='</div>';
       this._open(x,i,css,false);
     },
     close:function(i){

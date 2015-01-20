@@ -7,7 +7,7 @@
     </list>
     <ignored path="cp2yNew.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421635670856" ignored="false" />
+    <file path="/Dummy.txt" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421731891889" ignored="false" />
     <file path="/index.html" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1418118056906" ignored="false" />
     <file path="/dialog.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1421646578345" ignored="false" />
     <file path="/10038.js" changelist="0bacf00c-a4a2-4c5d-97b0-fc44d565cde7" time="1420787643063" ignored="false" />
@@ -358,29 +358,9 @@
       <file leaf-file-name="dialog.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="26" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-1.3274021">
+            <state line="81" column="7" selection-start="3145" selection-end="3145" vertical-scroll-proportion="0.5533808">
               <folding>
-                <marker date="1421646682000" expanded="false" signature="2652:2659" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/js/util.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="0" selection-end="95786" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1421731928000" expanded="true" signature="2652:2659" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -586,7 +566,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14558473" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14558473" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -729,32 +709,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/css/dialog.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="57" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.38434163">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="0" selection-end="95786" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="18" column="57" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.38434163" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="24" selection-start="592" selection-end="592" vertical-scroll-proportion="0.4483986" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="0" selection-end="95786" vertical-scroll-proportion="0.085409254" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/js/dialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-1.3274021">
+        <state line="81" column="7" selection-start="3145" selection-end="3145" vertical-scroll-proportion="0.5533808">
           <folding>
-            <marker date="1421646682000" expanded="false" signature="2652:2659" placeholder="..." />
+            <marker date="1421731928000" expanded="true" signature="2652:2659" placeholder="..." />
           </folding>
         </state>
       </provider>
